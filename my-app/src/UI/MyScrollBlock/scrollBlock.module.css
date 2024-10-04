@@ -1,0 +1,23 @@
+
+.scrollBlock{
+    position: absolute;
+    background: linear-gradient(to right, #3d3f4b, #45485a);
+    width: 45%;
+    top: -5%;
+    height: 665px;
+    transform: translateX(35px);
+    transition: all .3s ease-out;
+    z-index: 5;
+  }
+  
+  .isLogin{
+    transform: translateX(560px);
+  }
+  .isSignIn{
+    transform: translateX(35px);
+  }
+  
+  .login_welcome{
+    font-size: 35px;
+    color: #fff;
+  }

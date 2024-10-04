@@ -1,0 +1,29 @@
+.Post{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
+}
+.post_title{
+    font-size: 20px;
+}
+.post_number{
+    background-color: #ccc;
+    padding: 3px 4px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    width: 30%;
+}
+
+.post_creator{
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 500;
+}

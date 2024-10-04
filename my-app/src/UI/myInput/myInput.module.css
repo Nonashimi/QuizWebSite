@@ -1,0 +1,10 @@
+.MyInput{
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 10px 30px ;
+    outline: none;
+    width: 300px;
+}
+.MyInput:focus{
+    border-bottom: 2px solid #000;
+}

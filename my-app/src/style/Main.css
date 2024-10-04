@@ -1,0 +1,87 @@
+/* Header */
+
+header{
+    background: linear-gradient(to right, #3d3f4b, #45485a);
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.header_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+.header_components{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+.header_options{
+    display: flex;
+    gap: 20px;
+}
+.header_option{
+    font-size: 18px;
+    color: #ccc;
+    cursor: pointer;
+    transition: all .3s;
+}
+.header_option:hover{
+    color: #fff;
+}
+
+.header_option::after{
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0;
+    background-color: #fff;
+    margin: 4px auto 0;
+}
+
+.option_active{
+    color: #fff;
+}
+.option_active::after{
+    width: 100%;
+    transition: all .3s;
+}
+
+
+.title{
+    color: #fff;
+}
+
+.userImg{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+/* For Section */
+
+section{
+    width: 1120px;
+    margin: 40px auto;
+    background-color: #ffffffce;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    min-height: 500px;
+    border-radius: 25px;
+    padding: 10px 40px;
+}
+
+
+
+
+/* home */
+
+.homeSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

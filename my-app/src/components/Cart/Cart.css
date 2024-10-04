@@ -1,0 +1,17 @@
+.cart_block{
+    width: 70%;
+    height: 300px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.3);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.3);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.cart_text{
+    font-size: 20px;
+}
