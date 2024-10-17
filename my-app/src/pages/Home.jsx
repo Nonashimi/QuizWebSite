@@ -1,11 +1,11 @@
 import React from 'react'
-import TitleForPages from '../UI/TitleForPages/TitleForPages'
-
+import TitleForPages from '../UI/TitleForPages/TitleForPages';
+import "../style/Home.css";
 const Home = () => {
   return (
     <div className="Home">
       <TitleForPages title = "Home"/>
-      <div className='homeSection'><h2>Welcome to our WebSite</h2></div>
+      <div className='homeSection'><h1>Welcome to our WebSite</h1></div>
     </div>
   )
 }

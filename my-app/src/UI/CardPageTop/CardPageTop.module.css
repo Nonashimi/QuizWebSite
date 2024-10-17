@@ -1,0 +1,67 @@
+.cardsPage_top, .cardsPage_bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+}
+.cardsPage_space{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    
+}
+.cardsPage_info{
+    text-align: center;
+    font-weight: 500;
+}
+.cardPage_title{
+    color: #000;
+}
+
+
+.buttons{
+    display: flex;
+    gap: 40px;
+}
+
+.left img, .prev img{
+    width: 30px;
+    height: 30px;    
+}
+.prev{
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.left{
+    width: 30px;
+    height: 30px;    
+    border: 1px solid #ccc;
+    padding: 3px;
+    border-radius: 7px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.left:hover{
+    background-color: #e0ecf0;
+}
+
+.buttons button{
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 15px;
+    transition: all .3s;
+}
+.buttons button:hover{
+    background-color: #f8f8f8;
+}
+
+.buttons button img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}

@@ -1,0 +1,30 @@
+.Carts{
+    width: 1050px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.Carts_data{
+    display: flex;
+    gap: 50px;
+    margin: 0 auto;
+    transition: all .3s;
+}
+.pagination{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.pagination-turn{
+    cursor: pointer;
+}
+
+.not-active{
+    color: #ccc;
+    pointer-events: none;
+}
+
+.img-turn{
+    width: 40px;
+}

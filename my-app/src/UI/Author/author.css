@@ -1,0 +1,35 @@
+.author_title{
+    font-size: 20px;
+}
+
+.author_section{
+    display: flex;
+    gap: 10px;
+}
+
+.author_name{
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(58, 56, 56);
+}
+
+
+.author_type, .author_date{
+    color: #767575;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 3px 0;
+}
+.Author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.author_img img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}

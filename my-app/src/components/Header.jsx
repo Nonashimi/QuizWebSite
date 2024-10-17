@@ -1,24 +1,32 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useMemo, useState } from 'react'
 import userImage from "../assets/icons8-пользователь-мужчина-в-кружке-64.png";
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import Parametr from '../UI/Parametrs/Parametr';
+import DataContext from '../UI/context/DataContext';
 
 const Header = () => {
     const router = useNavigate();  
+    const {clickProfile, setClickProfile} = useContext(DataContext);
+    const location = useLocation();
     const [options, setOptions] = useState([
         {
             title: "Home",
             router:"",
-            isActive: false, 
+            isActive: location.pathname == '/', 
             id: 1
         },
         {
             title: "Quizzes",
             router:"/quizzes",
-            isActive: true,
+            isActive: location.pathname == '/quizzes/',
             id: 2
         }
         
     ]);
+
+    useEffect(() =>{
+
+    }, [location])
 
     const clickOption = (id) =>{
         let arr = options.map(option =>{
@@ -45,8 +53,9 @@ const Header = () => {
             )
             }
         </div>
-          <div className="header_profile">
-          <img src={userImage} alt="" className='userImg' onClick={() => router("/autentification")}/>
+          <div className="header_profile" onClick={(e) => e.stopPropagation()}>
+          <img src={userImage} alt="" className='userImg' onClick={() => setClickProfile(!clickProfile)}/>
+          <Parametr></Parametr>
           </div>
           </div>
         </div>

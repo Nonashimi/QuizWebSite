@@ -1,5 +1,4 @@
 /* Header */
-
 header{
     background: linear-gradient(to right, #3d3f4b, #45485a);
     -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
@@ -49,6 +48,10 @@ header{
     transition: all .3s;
 }
 
+.header_profile{
+    position: relative;
+    width: 20%;
+}
 
 .title{
     color: #fff;
@@ -74,14 +77,8 @@ section{
     border-radius: 25px;
     padding: 10px 40px;
 }
-
-
-
-
 /* home */
 
-.homeSection{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
+/* Quiz Page */

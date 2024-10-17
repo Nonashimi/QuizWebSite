@@ -1,0 +1,7 @@
+.mode_list{
+    display: flex;
+    gap: 20px;
+    padding: 20px 0 0;
+    width: 900px;
+    margin: 0 auto;
+}

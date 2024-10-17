@@ -5,7 +5,7 @@ const Quiz_list = ({arr}) => {
   return (
     <div className={classes.Quiz_List}>
         {arr.map((data)=> 
-            <Quiz data = {data}></Quiz>)
+            <Quiz data = {data} key = {data.id}></Quiz>)
         }
     </div>
   )

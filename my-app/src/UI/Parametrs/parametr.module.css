@@ -1,0 +1,21 @@
+.parametrs{
+    color: #fff;
+    position: absolute;
+    display: none;
+}
+.parametr{
+    width: 70%;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all .5s;
+    font-size: 14px;
+    background: linear-gradient(to right, #232843, #1a1e31);
+}
+.parametr:hover{
+    background: linear-gradient(to right, #596294, #454e7b);
+}
+.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

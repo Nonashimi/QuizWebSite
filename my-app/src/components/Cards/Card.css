@@ -1,0 +1,39 @@
+.Card{
+    width: 900px;
+    background-color: #fff;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.3);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.3);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.3);
+    margin: 20px auto;
+    border-radius: 15px;
+    
+}
+.Card_block{
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.Card_question{
+    width: 30%;
+    display: -webkit-box;          
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 3;         
+    overflow: hidden;
+    max-height: 120px;   
+}
+.Card_answer{
+    width: 50%;
+    display: -webkit-box;          
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 3;         
+    overflow: hidden;
+    max-height: 120px; 
+}
+
+.line{
+    width: 3px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 2px;
+}
