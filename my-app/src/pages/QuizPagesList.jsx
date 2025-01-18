@@ -62,11 +62,14 @@ const Quiz_page = () => {
                 <Route path='' element = {
                   <div> 
                     <TitleForPages title = "Quizzes"/>
+                    <div className="quiz_list_container">
                     <Functions functions={functions} setFunctions={setFunctions}></Functions>
                     {sortedAndSearchedQuiz.length == 0 
                     ? <NotFound></NotFound>
                     : <Quiz_list arr = {sortedAndSearchedQuiz}></Quiz_list>
                     }
+                    </div>
+                   
                     
                   </div>
                          }></Route>

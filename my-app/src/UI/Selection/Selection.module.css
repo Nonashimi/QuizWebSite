@@ -1,0 +1,17 @@
+.cardsPage_space{
+    width: 10%;
+    display: flex;
+    justify-content: end;
+    padding: 5px 0;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s;
+    border: none;
+    font-size: 16px;
+    color: #494848;
+    background-color: #fff;
+}
+.cardsPage_space:hover{
+    background-color: #efecec;
+}

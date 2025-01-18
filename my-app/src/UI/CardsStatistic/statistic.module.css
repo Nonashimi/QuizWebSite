@@ -1,0 +1,78 @@
+.stat_head{
+    display: flex;
+    margin-bottom: 30px;
+}
+.title{
+    font-size: 50px;
+    font-weight: 600;
+}
+.statistic{
+    width: 844px;
+    margin: 0 auto;
+}
+.section_title{
+    font-size: 25px;
+    color: #7d7c7c;
+    font-weight: 600;
+}
+.sections{
+    width: 100%;
+    display: flex;
+}
+.section{
+    width: 50%;
+}
+
+.section_data{
+    margin: 30px 10px 0;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.res{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding: 7px 0;
+}
+.res_cor, .res_notcor{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+.res_cor{
+    background-color: rgba(0, 255, 0, 0.116);
+    color: green;
+}
+.res_notcor{
+    background-color: rgba(255, 8, 8, 0.114);
+    color: rgb(210, 4, 4);
+}
+
+.section_inner{
+    width: 100%;
+    padding: 7px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.section_inner button{
+    padding: 15px 0;
+    border: 1px solid #7d7c7c;
+    border-radius: 13px;
+    background-color: #f6f9fd;
+    font-size:16px;
+    width: 95%;
+    font-weight: 600;
+    color: #7d7c7c;
+    transition: all .3s;
+    cursor: pointer;
+}
+.section_inner button:hover{
+    color: #424141;
+    border: 1px solid #5d5c5c;
+}

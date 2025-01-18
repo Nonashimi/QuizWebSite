@@ -1,0 +1,31 @@
+.CartCounter{
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.counter_not, .counter_yes{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: 700;
+}
+.counter_number{
+    width: 40px;
+    text-align: center;
+    border-radius: 20px;
+}
+.counter_not .counter_number{
+    background-color: rgba(255, 8, 8, 0.114);
+    border: 1px solid red;
+}
+.counter_yes .counter_number{
+    background-color: rgba(0, 255, 0, 0.116);
+    border: 1px solid green;
+}
+.counter_not{
+    color: rgb(210, 4, 4);
+}
+.counter_yes{
+    color: green;
+}

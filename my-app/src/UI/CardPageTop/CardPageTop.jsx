@@ -2,18 +2,17 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import x from "../../assets/icons8-x-96.png"
 import classes from "./CardPageTop.module.css";
-const CardPageTop = () => {
+import ProgressLine from '../progressLine/ProgressLine';
+import Selection from '../Selection/Selection';
+const CardPageTop = ({cartPage, totalPage}) => {
     const router = useNavigate();
-
   return (
-    <div className={classes.cardsPage_top}>
-        <select name="" id="" className={classes.cardsPage_space}>
-          <option value="">cards</option>
-          <option value="">quizz</option>
-        </select>
+    <div className={classes.cardTop}>
+<div className={classes.cardsPage_top}>
+        <Selection/>
         <div className={classes.cardsPage_info}>
           <div className={classes.counter}>
-              1/3
+              {cartPage >= totalPage? totalPage: cartPage} / {totalPage}
           </div>
           <div className={classes.cardPage_title}>
             The Great Gatsby
@@ -25,6 +24,9 @@ const CardPageTop = () => {
           </div>
         </div>
       </div>
+      <ProgressLine percent={(cartPage)/totalPage * 100}/>
+    </div>
+    
   )
 }
 

@@ -1,13 +1,14 @@
 .cardsPage_top, .cardsPage_bottom{
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 10px 15px 5px;
     align-items: center;
+
 }
 .cardsPage_space{
     width: 10%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     
 }
 .cardsPage_info{
@@ -18,6 +19,15 @@
     color: #000;
 }
 
+.cardTop{
+    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 25px 25px 0 0;
+    width: 1120px;
+    position: sticky;
+    top: 0;
+    z-index: 7;
+}
 
 .buttons{
     display: flex;
@@ -29,7 +39,7 @@
     height: 30px;    
 }
 .prev{
-    padding: 3px;
+    padding: 3px 10px;
     width: 30px;
     height: 30px;
     transition: all .3s;
@@ -64,4 +74,10 @@
     width: 30px;
     height: 30px;
     cursor: pointer;
+}
+
+
+.notActive{
+    pointer-events: none;
+    opacity: .5;
 }

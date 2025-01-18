@@ -1,0 +1,49 @@
+.test_card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 40px;
+    background-color: #fff;
+    width: 70%;
+    margin: 0 auto;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.3);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.3);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.3);
+    border-radius: 15px;
+}
+ .test_cards{
+    display: flex;
+    flex-direction: column;
+    gap: 50px; 
+    padding: 20px 0 60px;
+}
+
+.test_card_question{
+    font-size: 20px;
+    padding: 20px 0 40px;
+}
+.test_card_text{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 0 30px;
+}
+.test_card_variants{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+.choosed{
+    border-color: blue;
+    background-color: rgba(0, 0, 255, 0.062);
+}
+.choosed:hover{
+    border-color: blue;
+
+}
+.test_cart_button{
+    text-align: center;
+    padding: 20px 0 40px;
+}
+

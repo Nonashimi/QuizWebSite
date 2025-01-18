@@ -6,28 +6,47 @@ import CartsList from '../components/Cart/CartsList';
 import TitleForQuiz from '../UI/TitleForPages/titleForQuiz';
 import CardsList from '../components/Cards/CardsList';
 import Author from '../UI/Author/author';
-import Mode from '../components/modes/mode';
 import ModeList from '../components/modes/modeList';
-const QuizPage = () => {
-    // const [data, setData] = useState([]);
-    // useEffect(() =>{
-    //   // fetchData();
-    // },[]);
-
-    // const fetchData = async() =>{
-    //   const response = await QuizService.getQuizQuestionById(1);
-    //   setData(response.data);
-    // }   
+const QuizPage = () => { 
     const [cartPage, setCartPage] = useState(0);
     const totalPage = usePagination(cartPage);
+    const data = [
+      {
+        id: 1,
+        question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, hic!",
+        answer: "Lorem ipsum dolor sit amet."
+      },
+      {
+        id: 2,
+        question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, hic!",
+        answer: "Lorem ipsum dolor sit amet."
+      },
+      {
+        id: 3,
+        question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, hic!",
+        answer: "Lorem ipsum dolor sit amet."
+      },
+      {
+        id: 4,
+        question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, hic!",
+        answer: "Lorem ipsum dolor sit amet."
+      },
+      {
+        id: 5,
+        question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, hic!",
+        answer: "Lorem ipsum dolor sit amet."
+      }
+    ];
   return (
     <div className="">
       <TitleForQuiz title = {"The Great Gatsby"}/>
       <ModeList></ModeList>
-      <CartsList totalPage={totalPage}></CartsList>
-      <Pagination cartPage={cartPage} setCartPage={setCartPage} totalCartPage={3}></Pagination> 
-      <Author></Author>   
-      <CardsList></CardsList>
+      <CartsList totalPage = {totalPage} data = {data}></CartsList>
+      <Pagination cartPage={cartPage} setCartPage={setCartPage} totalCartPage={data.length}></Pagination> 
+      <Author ></Author>   
+      <CardsList ></CardsList>
+      
+
     </div>
   )
 }

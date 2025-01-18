@@ -6,6 +6,7 @@ import Quiz_page from '../../pages/QuizPagesList'
 import Home from '../../pages/Home'
 import MyProfile from '../../pages/MyProfile'
 import CardsPage from '../../pages/CardsPage'
+import TestPage from '../../pages/TestPage'
 
 const AppRouter = () => {
   return (
@@ -16,6 +17,7 @@ const AppRouter = () => {
                 <Route path="quizzes/*" element={<Quiz_page />} />
                 <Route path="my_profile/*" element={<MyProfile/>} />
                 <Route path="quizzes/:id/cards" element={<CardsPage/>} />
+                <Route path="quizzes/:id/tests" element={<TestPage/>} />
             </Route>
         </Routes>
   )
